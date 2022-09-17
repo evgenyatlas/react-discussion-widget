@@ -1,7 +1,7 @@
 .Card {
     box-shadow: var(--base-box-shadow);
-    border-radius: var(--base-border-radius);
+    border-radius: var(--rdw-base-border-radius);
     padding: var(--rdw-base-padding);
     background: white;
-    font-family: var(--base-font-family);
+    font-family: var(--rdw-base-font-family);
 }

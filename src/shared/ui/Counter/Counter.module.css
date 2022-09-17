@@ -3,8 +3,8 @@
     background: #434343;
     height: var(--rdw-base-height-control);
     line-height: var(--rdw-base-height-control);
-    border-radius: var(--base-border-radius);
-    font-family: var(--base-font-family);
+    border-radius: var(--rdw-base-border-radius);
+    font-family: var(--rdw-base-font-family);
     color: white;
     padding: 0px var(--rdw-base-padding);
     font-weight: bold;

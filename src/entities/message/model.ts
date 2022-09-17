@@ -1,7 +1,8 @@
 import { createStore } from 'effector'
 import { IMessage, IMessageMap } from 'shared/types'
 
-//STORES//
+/**STORES**/
+//number of all messages
 export const $numberAllMessages = createStore(0)
 //dictionary of comments
 export const $messageMap = createStore<IMessageMap>({})

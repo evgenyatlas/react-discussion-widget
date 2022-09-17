@@ -1,10 +1,10 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Counter } from "./Counter";
+import { Counter } from "./Counter"
 
 export default {
-    title: 'Example/Counter',
+    title: 'UIkit/Counter',
     component: Counter,
 } as ComponentMeta<typeof Counter>
 

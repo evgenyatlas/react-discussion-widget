@@ -1,3 +1,5 @@
+export type IMessageMap = Record<number, IMessage>
+
 export interface IMessage {
     id: number
     userName: string

@@ -7,4 +7,4 @@ export const $numberAllMessages = createStore(0)
 export const $messageMap = createStore<IMessageMap>({})
 export const $messageList = $messageMap.map<Array<IMessage>>(Object.values)
 //number of messages displayed
-export const $numberComment = $messageList.map(messsages => messsages.length)
+export const $numberMessages = $messageList.map(messsages => messsages.length)

@@ -1,0 +1,18 @@
+.Counter {
+    display: inline-block;
+    background: #434343;
+    height: var(--rdw-base-height-control);
+    line-height: var(--rdw-base-height-control);
+    border-radius: var(--base-border-radius);
+    font-family: var(--base-font-family);
+    color: white;
+    padding: 0px var(--rdw-base-padding);
+    font-weight: bold;
+}
+
+@media (max-width: 550px) {
+    .Counter {
+        font-size: 12px;
+        padding: 7px 18px;
+    }
+}

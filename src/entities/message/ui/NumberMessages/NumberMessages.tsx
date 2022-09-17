@@ -1,8 +1,7 @@
 import React from 'react'
 import { useStore } from 'effector-react'
-import styles from './NumberMessages.module.css'
 import { $numberAllMessages } from 'entities/message/model'
-import { declOfNum } from 'shared/lib/str/declOfNum'
+import { Counter } from 'shared/ui/Counter'
 
 interface NumberMessagesProps {
     className?: string
@@ -11,8 +10,7 @@ interface NumberMessagesProps {
 export function NumberMessages({ className }: NumberMessagesProps) {
     const number = useStore($numberAllMessages)
     return (
-        <div className={`${styles.NumberMessages}${className ? ' ' + className : ''}`}>
-            {number} {declOfNum(number, ['Комментарий', 'Комментария', 'Комментариев'])}
-        </div>
+        <Counter className={className} value={number} titles={['Комментарий', 'Комментария', 'Комментариев']} />
     )
 }
+

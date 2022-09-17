@@ -1,4 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:wght@300;400;500;600;700&subset=latin,latin-ext);
+
 :root {
-    --base-box-shadow: -1px 0px 4px rgb(0 0 0 / 3%), -1px 4px 6px rgb(0 0 0 / 6%);
+    --rdw-base-height-control: 39px;
+    --rdw-base-padding: 13px;
     --base-border-radius: 3px;
+    --base-font-family: 'Roboto Condensed', sans-serif;
+    --base-box-shadow: -1px 0px 4px rgb(0 0 0 / 3%), -1px 4px 6px rgb(0 0 0 / 6%);
 }

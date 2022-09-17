@@ -1,0 +1,6 @@
+.Card {
+    box-shadow: var(--base-box-shadow);
+    border-radius: var(--base-border-radius);
+    padding: 13px;
+    background: white;
+}

@@ -1,0 +1,55 @@
+.Input {
+    display: inline-block;
+    border-radius: var(--rdw-base-border-radius);
+    padding: 0 var(--rdw-base-padding);
+    height: var(--rdw-base-height-control);
+    line-height: var(--rdw-base-height-control);
+    background: rgb(234 234 234 / 36%);
+}
+
+.Input>input {
+    appearance: none;
+    width: 100%;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--rdw-base-font-family);
+}
+
+.Input>input::placeholder {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+}
+
+.Input>input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+
+.Input_disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.Input_disabled>input {
+    cursor: not-allowed;
+}
+
+@media (max-width: 550px) {
+    .Input {
+        padding: 7px 5px;
+    }
+
+    .Input>input {
+        font-size: 14px;
+    }
+}

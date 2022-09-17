@@ -3,7 +3,7 @@
 :root {
     --rdw-base-height-control: 39px;
     --rdw-base-padding: 13px;
-    --base-border-radius: 3px;
-    --base-font-family: 'Roboto Condensed', sans-serif;
+    --rdw-base-border-radius: 3px;
+    --rdw-base-font-family: 'Roboto Condensed', sans-serif;
     --base-box-shadow: -1px 0px 4px rgb(0 0 0 / 3%), -1px 4px 6px rgb(0 0 0 / 6%);
 }

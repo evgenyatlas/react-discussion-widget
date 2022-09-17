@@ -1,0 +1,38 @@
+.Message {}
+
+.Message__Top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.Message__UserName {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.Message__Date {}
+
+.Message__Text {
+    font-weight: 400;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+}
+
+.Message__Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+
+    .Message {
+        padding: 13px;
+    }
+
+    .Message__Date {
+        font-size: 14px;
+    }
+}

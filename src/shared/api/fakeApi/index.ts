@@ -14,7 +14,7 @@ interface ICacheMessages {
 class FakeAPI implements IAPI {
     private cacheMessages: ICacheMessages = { list: rawData, map: {} }
     private delayRange: [number, number]
-    constructor(delayRange: [number, number] = [100, 400]) {
+    constructor(delayRange: [number, number] = [400, 900]) {
         this.delayRange = delayRange
         this.init()
     }
@@ -40,7 +40,6 @@ class FakeAPI implements IAPI {
         numberAllMessages: number
     }> {
         await delayRange(this.delayRange)
-        console.log()
         return {
             messages: this.cacheMessages.list.slice(skip, skip + limit),
             numberAllMessages: this.cacheMessages.list.length

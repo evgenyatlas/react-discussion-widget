@@ -1,0 +1,24 @@
+.Btn {
+    height: var(--rdw-base-height-control);
+    line-height: var(--rdw-base-height-control);
+    padding: 0px var(--rdw-base-padding);
+    border-radius: var(--rdw-base-border-radius);
+    background: #e2e1e0;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Btn__Icon {
+    height: 17px;
+    --margin-icon: 7px;
+}
+
+.Btn__Icon_left {
+    margin-right: var(--margin-icon);
+}
+
+.Btn__Icon_right {
+    margin-left: var(--margin-icon);
+}

@@ -13,8 +13,8 @@ interface LoadMoreProps {
 
 export function LoadMore({ className }: LoadMoreProps) {
     const fetching = useStore(fetchMessagesFx.pending)
-    console.log(fetching)
     const allLoaded = useStore($isEveryLoaded)
+
     return (
         !allLoaded ?
             <Btn onClick={() => loadMore()} className={`${styles.LoadMore}${className ? ' ' + className : ''}`}>

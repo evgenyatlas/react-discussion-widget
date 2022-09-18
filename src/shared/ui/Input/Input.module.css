@@ -22,7 +22,7 @@
 }
 
 .Input>input::placeholder {
-    font-family: "Roboto Condensed";
+    font-family: var(--rdw-base-font-family);
     font-weight: 400;
 }
 
@@ -42,14 +42,4 @@
 
 .Input_disabled>input {
     cursor: not-allowed;
-}
-
-@media (max-width: 550px) {
-    .Input {
-        padding: 7px 5px;
-    }
-
-    .Input>input {
-        font-size: 14px;
-    }
 }

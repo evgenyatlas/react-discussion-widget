@@ -9,10 +9,3 @@
     padding: 0px var(--rdw-base-padding);
     font-weight: bold;
 }
-
-@media (max-width: 550px) {
-    .Counter {
-        font-size: 12px;
-        padding: 7px 18px;
-    }
-}

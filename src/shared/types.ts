@@ -15,6 +15,6 @@ export interface IUser {
 
 export interface IAPI {
     get(props: { limit?: number, skip?: number }): Promise<{ messages: Array<IMessage>, numberAllMessages: number }>
-    send(props: IMessage): Promise<IMessage>
+    send(props: { message: IMessage, user: IUser }): Promise<IMessage>
     auth(props: IUser): Promise<IUser>
 }

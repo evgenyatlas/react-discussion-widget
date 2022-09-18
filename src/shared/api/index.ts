@@ -14,7 +14,7 @@ class API {
         return this.api.get(props)
     }
 
-    send = async (props: { message: IMessage, user: IUser }): Promise<IMessage> => {
+    send = async (props: { message: string, user: IUser }): Promise<IMessage> => {
         return this.api.send(props)
     }
 

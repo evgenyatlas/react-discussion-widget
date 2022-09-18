@@ -46,8 +46,8 @@ class FakeAPI implements IAPI {
         }
     }
 
-    async send({ user, message }: { message: IMessage, user: IUser }): Promise<IMessage> {
-        const msg = createMessage({ userName: user.userName, text: message.text })
+    async send({ user, message }: { message: string, user: IUser }): Promise<IMessage> {
+        const msg = createMessage({ userName: user.userName, text: message })
         this.addToCache(msg)
         localMessages.save(msg)
         return msg

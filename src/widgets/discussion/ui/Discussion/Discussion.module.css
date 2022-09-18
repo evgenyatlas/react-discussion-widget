@@ -1,3 +1,6 @@
-.Discussion {
+.Discussion {}
 
+.Discussion__LoadMore {
+    margin: 0 auto;
+    margin-top: 15px;
 }

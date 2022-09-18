@@ -9,7 +9,7 @@ import { listToMap } from 'shared/lib/collection/listToMap'
 export const $numberAllMessages = createStore(0)
 //dictionary of messages
 export const $messageMap = createStore<IMessageMap>({})
-export const $messageList = $messageMap.map<Array<IMessage>>(Object.values)
+export const $messageList = $messageMap.map<Array<IMessage>>((messageMap) => Object.values(messageMap).sort((a, b) => b.date - a.date))
 //number of messages displayed
 export const $numberMessages = $messageList.map(messsages => messsages.length)
 
@@ -18,7 +18,7 @@ export const fetchMessagesFx = createEffect(API.get)
 
 $messageMap.on(
     fetchMessagesFx.doneData.map(({ messages }) => messages),
-    (state, comments) => listToMap(comments, 'id')
+    (state, comments) => ({ ...state, ...listToMap(comments, 'id') })
 )
 $numberAllMessages.on(
     fetchMessagesFx.doneData.map(({ numberAllMessages }) => numberAllMessages),

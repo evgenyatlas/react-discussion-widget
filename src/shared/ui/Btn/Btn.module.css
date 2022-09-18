@@ -10,15 +10,6 @@
     cursor: pointer;
 }
 
-.Btn__Icon {
-    height: 17px;
-    --margin-icon: 7px;
-}
-
-.Btn__Icon_left {
-    margin-right: var(--margin-icon);
-}
-
-.Btn__Icon_right {
-    margin-left: var(--margin-icon);
+.Btn:active {
+    opacity: 0.8;
 }

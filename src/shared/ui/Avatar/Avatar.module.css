@@ -1,0 +1,38 @@
+.Avatar {
+    width: var(--rdw-base-height-control);
+    height: var(--rdw-base-height-control);
+    line-height: var(--rdw-base-height-control);
+    font-family: var(--rdw-base-font-family);
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Avatar_color_blue {
+    background: #3498DB;
+}
+
+.Avatar_color_green {
+    background: #2ECC71
+}
+
+.Avatar_color_red {
+    background: #E74C3C;
+}
+
+.Avatar_color_orange {
+    background: #F39C12;
+}
+
+.Avatar_size_s {
+    width: var(--rdw-base-height-control);
+    height: var(--rdw-base-height-control);
+}
+
+.Avatar_size_m {
+    width: calc(var(--rdw-base-height-control) * 2);
+    height: calc(var(--rdw-base-height-control) * 2);
+    line-height: calc(var(--rdw-base-height-control) * 2);
+    font-size: 1.5rem;
+}

@@ -1,5 +1,9 @@
 .Discussion {}
 
+.Discussion__SendMessage {
+    margin-bottom: 20px;
+}
+
 .Discussion__LoadMore {
     margin: 0 auto;
     margin-top: 15px;

@@ -15,3 +15,10 @@ export const Default = Template.bind({})
 Default.args = {
     children: "Отправить",
 }
+
+export const Transparent = Template.bind({})
+
+Transparent.args = {
+    children: "Отправить",
+    mode: "transparent"
+}

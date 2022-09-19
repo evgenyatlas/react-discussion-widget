@@ -3,6 +3,8 @@
     line-height: var(--rdw-base-height-control);
     padding: 0px var(--rdw-base-padding);
     border-radius: var(--rdw-base-border-radius);
+    font-family: var(--rdw-base-font-family);
+    font-weight: bold;
     background: #e2e1e0;
     border: none;
     display: flex;
@@ -12,4 +14,8 @@
 
 .Btn:active {
     opacity: 0.8;
+}
+
+.Btn_mode_transparent {
+    background: none;
 }

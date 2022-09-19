@@ -14,11 +14,13 @@
 }
 
 .SendMessage__Input {
-    width: 100%;
+    flex: 1;
+    margin: 0 7px;
 }
 
 .SendMessage__Send {
     margin-left: 5px;
+    padding: 0;
 }
 
 .SendMessage_reply {

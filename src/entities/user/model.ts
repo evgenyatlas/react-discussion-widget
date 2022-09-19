@@ -5,7 +5,7 @@ import { IUser } from "shared/types"
 /**!!!THIS is a test implementation, finish later!!!*/
 
 /**STORES**/
-export const $user = createStore<IUser>({ userName: 'TEST' })
+export const $user = createStore<IUser>({ userName: 'Eugene' })
 export const $userName = $user.map(({ userName }) => userName)
 export const $logged = $userName.map(userName => !!userName)
 

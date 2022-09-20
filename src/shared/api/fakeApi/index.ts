@@ -10,7 +10,7 @@ interface ICacheMessages {
     map: IMessageMap
 }
 
-
+//Don't look here, it's just Fake API
 class FakeAPI implements IAPI {
     private cacheMessages: ICacheMessages = { list: rawData, map: {} }
     private delayRange: [number, number]
@@ -20,11 +20,7 @@ class FakeAPI implements IAPI {
     }
 
     private init() {
-        const savedMessages = localMessages.get()
-        for (let i = 0; i < savedMessages.length; i++) {
-            const message = savedMessages[i]
-            this.cacheMessages.list.push(message)
-        }
+        this.cacheMessages.list = localMessages.get()
         this.cacheMessages.map = listToMap(this.cacheMessages.list, 'id')
         this.cacheMessages.list = this.cacheMessages.list.sort(
             (a, b) => b.date - a.date
@@ -47,7 +43,7 @@ class FakeAPI implements IAPI {
     }
 
     async send({ user, message }: { message: string, user: IUser }): Promise<IMessage> {
-        const msg = createMessage({ userName: user.userName, text: message })
+        const msg = createMessage({ userName: user.name, text: message })
         this.addToCache(msg)
         localMessages.save(msg)
         return msg

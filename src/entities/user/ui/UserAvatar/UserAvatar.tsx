@@ -10,6 +10,6 @@ interface UserAvatarProps extends Omit<HTMLAttributes<HTMLDivElement>, 'color'> 
 export function UserAvatar({ className, ...props }: UserAvatarProps) {
     const user = useStore($user)
     return (
-        <Avatar className={className} name={user.userName} {...props} />
+        <Avatar className={className} name={user.name} {...props} />
     )
 }

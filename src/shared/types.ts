@@ -1,16 +1,21 @@
 export type IMessageMap = Record<string, IMessage>
 
+export interface IUser {
+    name: string
+}
+
 export interface IMessage {
     id: string | number
-    userName: string
+    user: IUser
     date: number
     text: string
     like: number
     dislike: number
 }
 
-export interface IUser {
-    userName: string
+export interface IRate {
+    commentId: string | number
+    value: number
 }
 
 export interface IAPI {
